@@ -1,0 +1,324 @@
+/* Responsive css of Home Page */
+
+/* for screen less than 400px  */
+
+@media screen and (max-width: 576px) {
+  .create-page{
+    margin-top: 120px;
+  }
+  .card-section{
+    margin-top:120px;
+  }
+  .area {
+    width: 100%;
+    margin: auto;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .nav-links button {
+    font-size: 15px;
+  }
+  .nav {
+    width: 100vw;
+    border-radius: 0px;
+  }
+  .sm-sl{
+    top:110px;
+  }
+  .nav-links {
+    justify-content: center;
+  }
+  .grp-input {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .grpinput-left input {
+    width: 90%;
+  }
+  .grp-input textarea {
+    width: 90%;
+    height: 5em;
+  }
+  .grpinput-left {
+    border-radius: 0px;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .grp-photo-button {
+    margin-top: 10px;
+    width: 85%;
+  }
+
+  .create-message {
+    width: 90vw !important;
+    margin-top: 150px;
+  }
+
+  .grpinput-right {
+    width: 100vw;
+    align-items: start;
+    padding-left: 30px;
+    border-radius: 0px;
+    box-sizing: border-box;
+  }
+  .each-term-input {
+    flex-direction: column;
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 30px;
+    border: none;
+    border-radius: 0px;
+    padding-bottom: 10px;
+  }
+
+  .main-term {
+    margin-top: 150px;
+  }
+  .btn-term-image {
+    font-size: 8px;
+  }
+
+  .label {
+    padding-left: 0px;
+    width: 80vw;
+  }
+  .term-name input {
+    width: 80vw;
+  }
+  .main-term {
+    margin-top: 130px;
+  }
+  .term-textarea textarea {
+    width: 80vw;
+    height: 5rem;
+  }
+  .term-image {
+    width: 70vw;
+    align-items: start;
+  }
+  .term-back {
+    width: 10%;
+  }
+  .addterm button {
+    margin-left: 30px;
+  }
+
+  .term-image img {
+    width: 5em;
+    align-self: start;
+  }
+
+  .term-image button {
+    margin-top: 10px;
+    align-self: start;
+    width: 9em;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .term-ops {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .termlist{
+    height:290px;
+  }
+
+  .submission .btn {
+    flex-direction: column;
+    width: 80vw;
+  }
+  .submission .btn button:nth-child(2) {
+    margin-top: 20px;
+  }
+  .submission .btn button:nth-child(1) {
+    margin-top: 10px;
+  }
+  .termdisplay {
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  .termdisplay .photo {
+    width: 90%;
+  }
+  .term-description {
+    border: 2px solid rgb(240, 238, 238) !important;
+    width: 95% !important;
+    box-sizing: border-box;
+    margin-top: 15px;
+  }
+  .term-description h3 {
+    font-size: 18px !important;
+  }
+  .term-description p {
+    font-size: 18px !important;
+  }
+  .socialMedia {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+/* 2.for screen less than 900px  and greater than 400px*/
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .submission .btn button {
+    margin-top: 40px;
+  }
+  .grp-Image {
+    width: 80%;
+  }
+
+  .create-message {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 770px) {
+  .btn-term-image {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 700px) {
+  .socialMedia {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+/* Responsive screen css for myflashcard Page */
+
+/* 1. for screen less than 1260px */
+
+@media screen and (max-width: 1260px) {
+  .each-card {
+    width: 40%;
+  }
+  .create-message {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .each-card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .each-card {
+    width: 90vw;
+  }
+  body {
+    width: 100vw;
+  }
+}
+/*new addition after deployment*/
+@media screen and (max-width:1260px){
+  .card-section{
+    Justify-content:space-evenly;
+    }
+    .each-card{
+      margin-left:auto;             
+      margin-right:auto;
+    }
+    
+}
+
+/* Responsive screen css for termcard Page */
+
+@media screen and (max-width: 1150px) {
+  .term-description p {
+    font-size: 12px;
+  }
+  .term-description h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .term-description p {
+    font-size: 10px;
+  }
+  .term-description h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .share .sharebutton {
+    padding-top: 5px;
+    width: 30%;
+  }
+  .sharebutton a {
+    font-size: 25px;
+  }
+  .termlist {
+    width: 15%;
+  }
+  /* .socialMedia{
+            width:18%;
+        } */
+  .termlist-heading {
+    font-size: 15px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .term-details {
+    flex-direction: column;
+  }
+  .termlist {
+    width: 100%;
+    /* flex-direction: row; */
+  }
+  .termdisplay {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px;
+    height: auto;
+  }
+  .share {
+    flex-direction: column;
+  }
+
+  .share .sharebutton {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1034px) {
+  
+  .term-details {
+    flex-wrap: wrap;
+  }
+  .termdisplay {
+    width: 65%;
+    padding: 10;
+  }
+  .socialMedia {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .socialMedia .otherbutton {
+    width: 30%;
+  }
+  .termlist {
+    width: 25%;
+  }
+}

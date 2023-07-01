@@ -1,0 +1,681 @@
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(26, 109, 125);
+  background-size: cover;
+}
+
+.outer {
+  width: 100%;
+}
+
+.area {
+  width: 80%;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #bccad6;
+  border-radius: 5px;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  z-index:9999;
+}
+
+.heading {
+  border-bottom: 1px solid black;
+  background: -webkit-linear-gradient(right, red, black, purple, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+}
+button {
+  cursor: pointer;
+}
+.nav-links button {
+  margin: 0px 5px;
+  padding: 15px 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links button:hover {
+  background-color: green;
+  color: white;
+  /* border:none; */
+}
+
+.card-page {
+  width: 100%;
+  /* background-color: aquamarine; */
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.modal-view {
+  border: 1px solid black;
+}
+
+.card-section {
+  /* background-color: yellow; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* justify-content: space-evenly; previous value */
+  justify-content:flex-start;  /*new addition after deployment*/
+  margin-top:150px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.each-card {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  /* border:1px solid rgb(211, 208, 208); */
+  height: 375px;
+  border-radius: 10px;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  margin-top: 35px;
+  /* new  addition after deployment*/
+  margin-left:5px;             
+  margin-right:5px;
+  /* new  addition ends */
+  box-shadow: 2px 2px 10px rgb(59, 57, 57), -2px -2px 5px rgb(71, 69, 69);
+  background-color: rgb(236, 232, 232);
+  cursor: pointer;
+}
+
+.carddelete {
+  background-color: rgb(247, 119, 119) !important;
+  color: rgb(11, 10, 10);
+  font-weight: bold;
+}
+.cardview {
+  background-color: rgb(119, 245, 119) !important;
+  color: black;
+  font-weight: bold;
+}
+
+.cardnotView {
+  background-color: rgb(181, 215, 181) !important;
+  color: rgb(123, 119, 119);
+  font-weight: bold;
+}
+
+.create-message {
+  /* border:1px solid black; */
+  /* width: 30%;  previous css before deployment */
+  width:100%; /*changed after deployment*/
+  margin: 15% 0;
+  /* padding:65px 25px; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgb(16, 15, 15);
+}
+
+.create-message h1 {
+  color: rgb(225, 26, 26);
+  text-shadow: 1px 1px 1px rgb(29, 29, 27);
+  animation-name: sorry;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+  animation-direction: alternate;
+}
+
+@keyframes sorry {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.8);
+  }
+}
+
+#msg1 {
+  color: brown;
+}
+
+#msg2 {
+  color: Green;
+}
+
+
+.sm-sl{
+  position:fixed;
+  right:0;
+  top:150px;
+  padding:10px 20px;
+  border-radius: 5px;
+  border:none;
+  z-index:10000;
+}
+
+.show-more{
+    background: linear-gradient(to right top,black,rgb(23, 23, 27),red);
+    color:rgb(241, 237, 237);
+    font-weight: bold;
+} 
+
+.hide-show-button{
+  display:none;
+}
+
+.show-less{
+  background: linear-gradient(to right top,rgb(255, 47, 0),rgb(15, 14, 14),rgb(84, 2, 102));
+  color:white;
+  font-weight: bold;
+}
+
+.each-card:hover {
+  background-color: rgb(44, 42, 42);
+  transform: translateY(-5px);
+  transition: 0.5s;
+  color: white;
+}
+
+.each-card:not(:hover) {
+  transition: 0.5s;
+}
+
+.holder {
+  height: 30%;
+}
+
+.img-holder {
+  width: 38%;
+  height: 110px;
+  margin: auto;
+  border-radius: 10%;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.holder img {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  border-radius: 8%;
+  border: 1px solid rgb(203, 201, 201);
+}
+
+.grp-name {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 25px;
+  /* border:1px solid red; */
+}
+
+.grp-description {
+  height: 30%;
+  text-align: justify;
+  padding: 0px 10px;
+  /* border:1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: normal;
+}
+
+.countcards {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.countcards h3 {
+  border: 1px solid rgb(236, 234, 234);
+  box-shadow: 1px 1px 2px black, -1px -1px 2px gray;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card-button {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-button button {
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 1px 1px 3px gray;
+  background-color: rgb(219, 226, 227);
+}
+
+.card-button button:hover {
+  box-shadow: 2px 2px 5px rgb(200, 197, 197);
+  transform: scale(1.1);
+  transition: 1s;
+}
+.main-term {
+  display: flex;
+  flex-direction: column;
+  margin-top: 160px;
+}
+
+.grp-details {
+  display: flex;
+  width: 100%;
+  box-shadow: 2px 2px 6px gray;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgb(133, 223, 248);
+}
+
+.term-back {
+  width: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 17px;
+}
+
+.term-back button {
+  color: black;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.grp-head {
+  width: 97%;
+  padding: 0 10px;
+}
+
+.term-details {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.termlist {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px rgb(194, 188, 188);
+  height: 51vh;
+  border-radius: 5px;
+  background-color: rgb(8, 82, 91);
+  border: 1px solid black;
+}
+
+.termlist-heading {
+  width: 100%;
+  margin-top: 0;
+  text-align: center;
+  padding: 15px 0 25px 0;
+}
+
+.termlist-button {
+  width: 100%;
+  margin-top: 0px;
+  overflow-y: scroll;
+  display:flex;
+  flex-direction: column;
+}
+
+.termlist-button button {
+  padding: 15px 0px;
+  border: 0.1px solid rgb(203, 199, 199);
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  margin-top: 0px;
+}
+.termlist-button button:hover {
+  background-color: rgb(0, 120, 163);
+  color: white;
+}
+
+.termdisplay {
+  width: 55%;
+  display: flex;
+  height: 40vh;
+  padding: 40px 20px;
+  justify-content: space-around;
+  box-shadow: 2px 2px 5px rgb(224, 222, 222);
+  /* background-color: rgb(14, 113, 122); */
+  background-color: rgb(8, 82, 91);
+  border-radius: 5px;
+}
+
+.termdisplay .photo {
+  width: 40%;
+  border: 1px solid rgb(232, 227, 227);
+  box-shadow: 2px 2px 5px rgb(224, 222, 222), -2px -2px 5px rgb(224, 222, 222);
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+.termdisplay .photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.termdisplay .term-description {
+  width: 50%;
+  padding: 0px 10px;
+  text-align: justify;
+  border: 1px solid rgb(232, 227, 227);
+  border-radius: 5px;
+}
+
+.term-description p {
+  color: white;
+}
+
+.term-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.socialMedia {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialMedia .otherbutton {
+  padding: 15px 0px;
+  border: 0.1px solid rgb(203, 199, 199);
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+  background-color: rgb(204, 226, 230);
+}
+
+.socialMedia .otherbutton:hover {
+  background-color: rgb(8, 82, 91);
+  color: white;
+}
+
+/* form input page css---------------------------------------------- */
+.create-page{
+  margin-top: 170px;
+}
+.grp-input {
+  display: flex;
+  width: 100%;
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+
+.grpinput-left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 20px 25px;
+  background-color: #87bdd8;
+  border-radius: 10px 0 0 10px;
+}
+
+.grpinput-left textarea {
+  width: 70%;
+  height: 10em;
+}
+
+.term-textarea textarea {
+  width: 90%;
+  height: 5rem;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.label {
+  padding: 10px 0;
+}
+
+input[type="text"] {
+  width: 50%;
+  height:3em;
+}
+
+.grpinput-right {
+  width: 30%;
+  background-color: #87bdd8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0px 10px 10px 0px;
+  padding: 5px 0px 5px 5px;
+}
+
+.grp-Image {
+  width: 50%;
+  height: 60%;
+  border: 3px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.grp-photo-button {
+  width: 53%;
+}
+
+.grpinput-right button {
+  background-color: rgb(2, 89, 33);
+  color: white;
+  padding: 10px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.term-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.each-term-input {
+  display: flex;
+  justify-content: space-around;
+  height: 185px;
+  margin-bottom: 15px;
+  background-color: #c2dbe8;
+  border-radius: 10px;
+}
+
+.addterm button {
+  padding: 10px 8px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(10, 87, 10);
+  color: rgb(203, 197, 197);
+  cursor: pointer;
+}
+
+.count {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.term-name {
+  width: 30%;
+}
+
+.term-name input {
+  width: 100%;
+}
+.term-desc {
+  width: 35%;
+}
+textarea {
+  padding: 5px 10px 0px 10px;
+  resize: none;
+  border-radius: 8px;
+}
+input {
+  border-radius: 8px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.term-image {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.term-image img {
+  border: 1px solid rgb(203, 22, 67);
+  border-radius: 5px;
+  width: 80%;
+  align-self: center;
+}
+
+.term-image button {
+  background-color: rgb(2, 90, 18);
+  padding: 8px 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 80%;
+  align-self: center;
+  color: white;
+}
+
+.term-ops {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.term-ops button:first-child {
+  background-color: rgb(6, 118, 188);
+  color: white;
+}
+
+.term-ops button:last-child {
+  background-color: rgb(212, 49, 60);
+  color: white;
+}
+
+.term-ops button:first-child:hover {
+  background-color: rgb(4, 80, 128);
+  transition: 0.5s;
+  transform: translateY(-1px);
+}
+
+.term-ops button:last-child:hover {
+  background-color: rgb(130, 5, 14);
+  transition: 0.5s;
+  transform: translateY(-1px);
+}
+
+.term-ops button {
+  border-radius: 10px;
+  padding: 5px 0;
+  font-size: 25px;
+  width: 50px;
+}
+
+.submission {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.submission .btn {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+.disable-color {
+  background-color: rgb(47, 185, 82) !important;
+  color: rgb(99, 98, 98) !important;
+}
+
+.btn button {
+  padding: 15px 75px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+[type="reset"] {
+  background-color: rgb(142, 26, 26);
+  color: white;
+}
+
+[type="reset"]:hover {
+  background-color: rgb(106, 13, 13);
+  transition: 0.5s;
+}
+
+[type="submit"]:hover {
+  background-color: rgb(198, 205, 198);
+  transition: 0.5s;
+}
+
+[type="submit"] {
+  background-color: rgb(1, 147, 1);
+  color: white;
+}
+
+.btn button:hover {
+  background-color: gree;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}

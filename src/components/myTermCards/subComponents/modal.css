@@ -1,0 +1,174 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+.main-modal {
+  border: 1px solid white;
+  width: 30%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  background-color: rgb(33, 32, 32);
+  z-index: 10000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 10px 10px gray;
+}
+
+.main-modal:hover {
+  background-color: rgb(22, 22, 22);
+  cursor: pointer;
+}
+
+.top-modal {
+  /* border:1px solid white; */
+}
+
+.modal-head {
+  /* border:1px solid white; */
+  color: rgb(185, 183, 183);
+}
+
+.middle-modal {
+  /* border:1px solid rgb(223, 215, 56); */
+  display: flex;
+  height: 50px;
+}
+
+.mm-link {
+  width: 75%;
+  /* border:1px solid green; */
+  height: 100%;
+}
+
+.mm-link input {
+  border-radius: 0;
+  width: 95%;
+  height: 100%;
+  padding: 10px 10px;
+  border: none;
+  background-color: rgb(213, 211, 211);
+  border-radius: 10px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgb(246, 6, 6);
+  font-size: 25px;
+  background-color: transparent;
+  border: 0.8px solid rgba(69, 67, 67, 0.3);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.modal-close-button:hover {
+  background-color: rgb(16, 16, 16);
+}
+
+.mm-button {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.mm-button button {
+  padding: 0 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(213, 211, 211);
+}
+
+.below-modal {
+  display: flex;
+  padding: 5px 0px;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.modal-icon {
+  padding: 10px 15px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: rgb(213, 211, 211);
+  font-weight: bold;
+}
+
+.modal-icon:hover {
+  background-color: rgb(12, 12, 12);
+  box-shadow: 1px 1px 2px gray;
+  transition: 3s;
+  transform: perspective(100px) rotateY(360deg);
+}
+
+.a {
+  color: green;
+}
+
+.b {
+  color: rgb(62, 62, 241);
+}
+
+.d {
+  color: rgb(33, 178, 250);
+}
+
+.e {
+  color: gray;
+}
+
+/* modal responsivenes */
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .main-modal {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .main-modal {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .main-modal {
+    width: 54%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 699px) {
+  .main-modal {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 499px) {
+  .main-modal {
+    width: 80%;
+  }
+  .modal-icon {
+    /* border:1px solid white; */
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgb(213, 211, 211);
+    font-weight: bold;
+  }
+  .mm-button button {
+    padding: 5px 7px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(213, 211, 211);
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/groupcreate/static/css/main.5d4980f0.css",
+    "main.js": "/groupcreate/static/js/main.f3f8aae3.js",
+    "index.html": "/groupcreate/index.html",
+    "main.5d4980f0.css.map": "/groupcreate/static/css/main.5d4980f0.css.map",
+    "main.f3f8aae3.js.map": "/groupcreate/static/js/main.f3f8aae3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d4980f0.css",
+    "static/js/main.f3f8aae3.js"
+  ]
+}

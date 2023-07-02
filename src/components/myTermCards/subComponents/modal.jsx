@@ -35,10 +35,14 @@ function Modal({closeModal}){
                     }
                     
     }
+
+    // sending close value to parent Component i.e TermCards
  
     const handlechange = () =>{
         closeModal(close);
     }
+
+       // recieving value from ModalShareButton.
 
     const linkValue = (myLink)=>[
             setLink(myLink)
@@ -55,6 +59,7 @@ function Modal({closeModal}){
 
                 <div className="middle-modal">
                     <div className="mm-link">
+                                                                                 {/* Here below dummy default link is provided */}
                         <input  readOnly ref={inputRef} value={link ? link : "https://flashcardshubham.netlify.app/"}></input>
                         
                     </div>

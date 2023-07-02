@@ -18,7 +18,7 @@ const { idSender} =  idSendingSlice.actions;
 function TermCards(){
 
     const [showModal, setShowModal] = useState(false);
-    
+    // recieving value to set for setShowModal from child component i.e Modal
       const closeModal = (val) => {
         setShowModal(val);
         document.body.style.overflow = 'auto'; // Enable scrolling on the background page
